@@ -1,0 +1,13 @@
+services:
+  
+  app:
+    build: .
+    restart: always
+    ports:
+      - 8082:8000
+
+#   adminer:
+#     image: adminer
+#     restart: always
+#     ports:
+#       - 9000:8080

@@ -15,7 +15,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd repos
-          cd Deplopment-Api-1
+          cd Deploypment-Api-1
           git pull origin main
           docker-compose down
           docker-compose up --build -d

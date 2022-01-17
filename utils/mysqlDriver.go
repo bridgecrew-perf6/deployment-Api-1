@@ -16,7 +16,7 @@ func InitDB(config *config.AppConfig) *gorm.DB {
 		config.Username,
 		config.Password,
 		config.Address,
-		config.Port,
+		config.DB_Port,
 		config.Name,
 	)
 	// "root:@tcp(127.0.0.1:3306)/be5db?charset=utf8&parseTime=True&loc=Local"

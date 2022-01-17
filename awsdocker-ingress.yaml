@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: go-app-ingress
+  name: awsdocker-ingress
   annotations:
     dev.okteto.com/generate-host: "domain"
 spec:
@@ -9,5 +9,5 @@ spec:
   - http:
       paths:
       - backend:
-          serviceName: go-app-service
+          serviceName: awsdocker-service
           servicePort: 8080
